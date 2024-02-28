@@ -92,3 +92,6 @@ elif option == "Negative":
         st.subheader(headline_neg)
         st.caption(text_neg)
 #        st.divider()
+
+url = 'https://www.kaggle.com/anzarwani2'       
+st.markdown("Developed by Anzar - Connect with me on [Kaggle](%s)" % url)
