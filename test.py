@@ -8,7 +8,7 @@ from news import fetch_news_from_rss
 
 st.header("Personalized News")
 st.title(':blue[Positive] or :red[Negative] news | As _you_ want it.')
-st.divider()
+#st.divider()
 
 pos_dict = {}
 neg_dict = {}
@@ -75,7 +75,7 @@ def sort_news():
 
 sort_news()  
 
-st.divider()
+#st.divider()
 st.subheader('Select Your News Mood :blue[positive] or :red[Negative]')
 option = st.selectbox(
     'Choose Mood',
@@ -86,9 +86,9 @@ if option == "Positive":
     for headline_pos, text_pos in zip(head_pos, text_pos):
         st.subheader(headline_pos)
         st.caption(text_pos)
-        st.divider()
+#        st.divider()
 elif option == "Negative":
     for headline_neg, text_neg in zip(head_neg, text_neg):
         st.subheader(headline_neg)
         st.caption(text_neg)
-        st.divider()
+#        st.divider()
