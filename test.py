@@ -80,7 +80,7 @@ st.subheader('Select Your News Mood :blue[positive] or :red[Negative]')
 option = st.selectbox(
     'Choose Mood',
     ('Positive', 'Negative')
-    , index=None)
+    )
 
 if option == "Positive":
     for headline_pos, text_pos in zip(head_pos, text_pos):
