@@ -15,7 +15,7 @@ neg_dict = {}
 headline = []
 examples = []
 
-#@st.cache_resource
+@st.cache_resource
 def load_model():
     saved_model_path = "news_sentiment_bert_tuned"
     reloaded_model = tf.saved_model.load(saved_model_path)
